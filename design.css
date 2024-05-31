@@ -1,0 +1,134 @@
+
+/* design.css */
+        body {
+            background-color: beige;
+    }
+
+        #name {
+            padding-left: -1px;
+            color: rgb(221, 114, 132);
+            text-align: center;
+            background-color: rgb(255, 209, 222);
+            border: 5px;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.2s;
+    }
+
+        #result {
+            width: 95%;
+            height: 65px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(237, 237, 237);
+            color: rgb(202, 91, 242);
+            font-size: 18px;
+    }
+
+        .num-btn {
+            padding: 30px;
+            border-radius: 10px;
+            align-items: center;
+            background-color: rgb(255, 223, 228);
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            width: 85px;
+            transition: background-color 0.3s, transform 0.2s;
+    }
+
+        .Del-num-btn {
+            padding: 20px;
+            border-radius: 10px;
+            align-items: center;
+            background-color: rgb(255, 223, 228);
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            width: 85px;
+            height: 90px;
+    }
+
+        .num-btn:hover, .Del-num-btn:hover {
+            background-color: rgb(255, 180, 180); /* Change the color to your desired hover color */
+    }
+
+        .table {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+    }
+
+        table {
+            background-color: pink;
+            align-items: center;
+            border-width: 10%;
+            border-radius: 16px;
+            border: 8px solid black;
+            padding: 10px;
+    }
+
+        /* Responsive Design */
+        /* Desktops and Laptops */
+        @media (min-width: 1024px) {
+        table {
+        width: 77%;
+        }
+        .num-btn, .Del-num-btn {
+        width: 210px;
+        height: 90px;
+        font-size: 30px;
+        }
+        #result {
+        font-size: 24px;
+        height: 80px;
+        }
+    }
+
+        /* Tablets */
+        @media (max-width: 768px) {
+        table {
+        width: 80%;
+        }
+        .num-btn, .Del-num-btn {
+        width: 130px;
+        height: 70px;
+        font-size: 25px;
+        }
+        #result {
+        font-size: 20px;
+        height: 70px;
+        }
+    }
+
+        /* Mobile Devices */
+        @media (max-width: 480px) {
+        table {
+        width: 90%;
+        }
+        .num-btn, .Del-num-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+        }
+        #result {
+        font-size: 16px;
+        height: 60px;
+        }
+    }
+
+        /* Small Mobile Devices */
+        @media (max-width: 320px) {
+        table {
+        width: 95%;
+        }
+        .num-btn, .Del-num-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        }
+        #result {
+        font-size: 14px;
+        height: 50px;
+        }
+    }
